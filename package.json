@@ -1,0 +1,12 @@
+{
+  "name": "pluck-emails",
+  "version": "0.0.0",
+  "description": "Pluck email addresses from a commonly formatted list",
+  "main": "index.js",
+  "bin": "./bin.js",
+  "author": "Andrew Crites <ajcrites@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
