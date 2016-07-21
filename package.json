@@ -8,5 +8,8 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2"
   }
 }
