@@ -12,3 +12,8 @@ jbrown@example.com
 lyellow@example.com`,
         pluckEmails("Jim Green <jgreen@example.com>, John Brown <jbrown@example.com>, Liam Yellow <lyellow@example.com>", "\n"));
 });
+
+test("pluck emails from formatted string with regex metacharacter separator", t => {
+    t.is(`jgreen@example.com$jbrown@example.com$lyellow@example.com`,
+        pluckEmails("Jim Green <jgreen@example.com>$ John Brown <jbrown@example.com>$ Liam Yellow <lyellow@example.com>", "$"));
+});

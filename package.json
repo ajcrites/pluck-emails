@@ -1,15 +1,25 @@
 {
   "name": "pluck-emails",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Pluck email addresses from a commonly formatted list",
-  "main": "index.js",
-  "bin": "./bin.js",
+  "main": "lib/index.js",
+  "bin": "lib/bin.js",
+  "scripts": {
+    "prepublish": "babel -d lib src"
+  },
   "author": "Andrew Crites <ajcrites@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ajcrites/pluck-emails.git"
+  },
   "license": "ISC",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "escape-regexp": "^0.0.1"
   },
   "devDependencies": {
-    "ava": "^0.15.2"
+    "ava": "^0.15.2",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0"
   }
 }
